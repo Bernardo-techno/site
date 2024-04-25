@@ -7,12 +7,13 @@
     text-decoration: none;
 }
 :root{
-    --bg-color : #ffffff;
-    --text-color : #000;
+    --bg-color : #e9e2e2;
+    --text-color : #ffffff;
     --second-color : #262626;
-    --main-color : #1C1B7E;
+    --main-color : #1414cf;
     --big-font : 5rem;
-    --h2-font :3rem;
+    --h2-font : 3rem;
+    --h3-font : 2.5rem;
     --p-font : 1.1rem;
 }
 
@@ -36,6 +37,7 @@ header{
 }
 header p{
     font-size: 1.5rem;
+    color: var(--text-color);
 }
 .navlist{
     display: flex;
@@ -45,7 +47,7 @@ header p{
 }
 .navlist a {
     font-size: var(--p-font);
-    color: #000;
+    color: var(--text-color);
     font-weight: 500;
     padding: 10px 27px;  
 }
@@ -59,4 +61,69 @@ header p{
     z-index: 10001;
     cursor: pointer;
     display: none;
+}
+
+section{
+    padding: 100px 18%;
+}
+/*PARTIE HOME STYLE*/
+
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/BACKGROUND.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+    border-radius: 10px;
+}
+
+
+span{
+    color: var(--bg-color);
+    font-size: 2.5rem;
+}
+.home-text h3{
+    color: var(--bg-color);
+    font-size: 30px;
+    font-weight: 500;
+}
+.home-text p{
+    font-size: 2rem;
+    color: var(--text-color);
+    line-height: 29px;
+    margin-bottom: 21px
+}
+.home-text .btn{
+    color: #fcf6f6;
+}
+.social a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(128, 103, 240, 1);
+    font-size: 17px;
+    color: var(--bg-color);
+    margin-right: 22px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.social a:hover{
+    transform: scale(1.1);
+    background-color: var(--main-color);
+    transition: .5s;
+
+}
+
+.home-img img{
+    width: 150%;
+    height: auto;
+    border-radius: 70%;
 }
