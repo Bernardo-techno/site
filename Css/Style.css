@@ -12,8 +12,8 @@
     --bg-color : #ffffff;
     --text-color : #ffffff;
     --second-color : #262626;
-    --main-color : #1414cf;
-    --color-pre : #afbabbd8;
+    --main-color : #262626;
+    --color-pre : #f9f9f9d8;
     --big-font : 5rem;
     --h2-font : 3rem;
     --h3-font : 2.5rem;
@@ -64,7 +64,7 @@ header p{
 }
 
 .navlist a:hover{
-    color: #1C1B7E;
+    color: #ffffff;
 }
 #menu-icon{
     font-size: 35px;
@@ -256,6 +256,10 @@ span{
 
 .about .about-text {
     flex: 1;
+
+}
+.about-text p {
+    width: 80%;
 }
 
 .about .about-image {
@@ -330,35 +334,24 @@ span{
 }
 
 .box {
-    background: var(--color-pre);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
     border: 1px solid #ccc;
+    padding: 16px;
+    background-color: #f9f9f9 ;
     border-radius: 8px;
-    transition: all .45s ease;
-  }
+    margin: 16px;
+    height: 265px;
+}
 
-  .box h3 {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    color: var(--second-color);
-  }
-  
-  .box p {
-    font-size: 1rem;
-    line-height: 1.1;
-    font-weight: bold;
-    margin-bottom: 25px;
-    overflow: hidden;
-    color: var(--second-color);
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
+.box h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
 
   /*Gallerie style */
 
